@@ -1072,8 +1072,7 @@ for (let i = 0; i < linkList.length; i++) {
   linkList[i].addEventListener("click", function () {
     let title = linkList[i].textContent;
     let id = orderedMovieList[title];
-    let result = 'https://vid' + Date.now() + '.vb17110frankfoley.pw';
-    var url = result + `/api/idkp?kp_id=${id}`;
+    var url = `https://vid${Date.now()}vb17110frankfoley.pw/api/idkp?kp_id=${id}`;
     let iframe = `<iframe width="700" height="500" src="${url}" frameborder="0" allowfullscreen=""></iframe>`;
     document.querySelector(".movieContainer").innerHTML = iframe;
     let header = document.createElement("h1");
